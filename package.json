@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/rickvlzaa/rickveloz/issues"
   },
-  "homepage": "https://github.com/rickvlzaa/rickveloz#readme"
+  "homepage": "https://github.com/rickvlzaa/rickveloz#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }
