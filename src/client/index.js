@@ -4,9 +4,12 @@ import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux';
 
 import App from './App';
-import store from './store';
+import configStore from './store';
 
-render(
+const store = configStore(window.__INITIAL_STATE__);
+delete window.__INITIAL_STATE__;
+
+hydrate(
     (
         <Provider store={store}>
             <BrowserRouter>

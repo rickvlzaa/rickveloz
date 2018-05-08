@@ -20,6 +20,10 @@ module.exports = {
                 use: [
                     'babel-loader'
                 ]
+            },
+            {
+                test: /\.scss$/,
+                use: []
             }
         ]
     },

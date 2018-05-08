@@ -37,9 +37,7 @@ export default class Home extends React.Component {
                         </ul>
                     </article>
                 </section>
-                <section>
-                    <h2>Recent Work</h2>
-                </section>
+                
             </div>
         );
     }

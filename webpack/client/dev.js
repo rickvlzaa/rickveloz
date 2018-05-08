@@ -12,6 +12,18 @@ module.exports = merge.strategy({'entry.app': 'prepend' })(base, {
         publicPath: '/'
     },
     mode: 'development',
+    module: {
+        rules: [
+            {
+                test: /\.scss/,
+                use: [
+                    {
+                        
+                    }
+                ]
+            }
+        ]
+    },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NoEmitOnErrorsPlugin()

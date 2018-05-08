@@ -91,7 +91,7 @@ eval("/* WEBPACK VAR INJECTION */(function(__dirname) {\n\nvar _express = __webp
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(__dirname) {\n\nvar path = __webpack_require__(/*! path */ \"path\");\nmodule.exports = {\n    context: path.resolve(__dirname, '../..'),\n    entry: {\n        app: ['./src/client/index.js']\n    },\n    output: {\n        path: path.resolve(__dirname, '../../build', 'public')\n    },\n    resolve: {\n        mainFiles: ['index'],\n        extensions: ['.js']\n    },\n    target: 'web',\n    module: {\n        rules: [{\n            test: /\\.js$/,\n            exclude: /node_modules/,\n            use: ['babel-loader']\n        }]\n    },\n    plugins: []\n};\n/* WEBPACK VAR INJECTION */}.call(this, \"webpack/client\"))\n\n//# sourceURL=webpack:///./webpack/client/base.js?");
+eval("/* WEBPACK VAR INJECTION */(function(__dirname) {\n\nvar path = __webpack_require__(/*! path */ \"path\");\nmodule.exports = {\n    context: path.resolve(__dirname, '../..'),\n    entry: {\n        app: ['./src/client/index.js']\n    },\n    output: {\n        path: path.resolve(__dirname, '../../build', 'public')\n    },\n    resolve: {\n        mainFiles: ['index'],\n        extensions: ['.js']\n    },\n    target: 'web',\n    module: {\n        rules: [{\n            test: /\\.js$/,\n            exclude: /node_modules/,\n            use: ['babel-loader']\n        }, {\n            test: /\\.scss$/,\n            use: []\n        }]\n    },\n    plugins: []\n};\n/* WEBPACK VAR INJECTION */}.call(this, \"webpack/client\"))\n\n//# sourceURL=webpack:///./webpack/client/base.js?");
 
 /***/ }),
 
